@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function GET(request: NextRequest) {
   try {
     // TODO: Fetch appointments from MongoDB
-    const appointments = [];
+    const appointments: Array<Record<string, unknown>> = [];
     
     return NextResponse.json({ appointments }, { status: 200 });
   } catch (error) {
