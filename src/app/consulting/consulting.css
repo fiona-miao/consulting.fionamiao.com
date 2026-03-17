@@ -39,6 +39,7 @@ header > div:first-child {
 .header-logo {
   height: 48px;
   width: auto;
+  max-width: 160px;
   object-fit: contain;
   animation: fadeInUp 0.8s ease-out;
   transition: transform 0.3s ease;
