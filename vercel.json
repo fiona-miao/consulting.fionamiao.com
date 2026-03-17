@@ -1,0 +1,43 @@
+{
+  "env": [
+    {
+      "key": "MONGODB_URI",
+      "description": "MongoDB connection string",
+      "value": "@mongodb_uri"
+    },
+    {
+      "key": "SMTP_HOST",
+      "description": "Email SMTP host",
+      "value": "@smtp_host"
+    },
+    {
+      "key": "SMTP_PORT",
+      "description": "Email SMTP port",
+      "value": "@smtp_port"
+    },
+    {
+      "key": "SMTP_USER",
+      "description": "Email SMTP username",
+      "value": "@smtp_user"
+    },
+    {
+      "key": "SMTP_PASSWORD",
+      "description": "Email SMTP password",
+      "value": "@smtp_password"
+    },
+    {
+      "key": "ADMIN_EMAIL",
+      "description": "Admin email for form submissions",
+      "value": "@admin_email"
+    },
+    {
+      "key": "NEXTAUTH_SECRET",
+      "description": "NextAuth secret (optional)",
+      "value": "@nextauth_secret"
+    }
+  ],
+  "domains": [
+    "www.advisory.fionaconsult.de",
+    "advisory.fionaconsult.de"
+  ]
+}
