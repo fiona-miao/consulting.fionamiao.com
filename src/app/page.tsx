@@ -1,65 +1,105 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <header>
+        <div><a href="#join">Join</a></div>
+        <div>
+          <a href="#services">Insights</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#inquiry">Feedback</a>
+        </div>
+      </header>
+
+      <section className="section hero">
+        <div className="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
+
+        <div className="hero-content">
+          <h1>FIONAMIAO CONSULTING</h1>
+          <p>
+            Independent strategy and operations consulting, supporting organizations
+            with decision-making, execution, and organizational clarity.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section services" id="services">
+        <div className="services-content">
+          <div>
+            <h2>Insights</h2>
+            <p>
+              We work closely with founders and leadership teams to address complex
+              strategic and operational challenges.
+            </p>
+            <ul>
+              <li>Business strategy and planning</li>
+              <li>Operations and process optimization</li>
+              <li>Market and competitive analysis</li>
+              <li>Execution and decision support</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Our advisory approach emphasizes clarity, independence, and practical execution.
+            </p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section work">
+        <h2>How We Work</h2>
+        <p>
+          Engagements are independent, confidential, and tailored to each client’s specific context.
+        </p>
+        <ul>
+          <li>Clearly scoped advisory engagements</li>
+          <li>Direct collaboration with decision-makers</li>
+          <li>Actionable, structured outputs</li>
+          <li>Strict confidentiality</li>
+        </ul>
+      </section>
+
+      <section className="section pricing-section" id="pricing">
+        <h2>Pricing</h2>
+        <div className="pricing">
+          <div className="plan"><strong>Basic</strong><br />$15 / month<br />General advisory access.</div>
+          <div className="plan"><strong>Standard</strong><br />$25 / month<br />Structured ongoing support.</div>
+          <div className="plan"><strong>Premium</strong><br />$30 / month<br />Priority advisory engagement.</div>
+        </div>
+      </section>
+
+      <section className="inquiry" id="inquiry">
+        <div>
+          <h2>Submit an inquiry</h2>
+          <p>We will get back to you within 24–48 hours.</p>
+          <p>email: <strong>contact@fionamiao.com</strong></p>
+        </div>
+        <form>
+          <input placeholder="Subject" />
+          <input type="email" placeholder="Your email" />
+          <textarea placeholder="Your message"></textarea>
+          <button type="button">Submit</button>
+        </form>
+      </section>
+
+      <section className="section" id="join">
+        <div className="join-box">
+          <h2>Join</h2>
+          <input placeholder="Full name" />
+          <input placeholder="Email" />
+          <input placeholder="Company" />
+          <input type="password" placeholder="Password" />
+          <button>Create account</button>
+        </div>
+      </section>
+
+      <footer>
+        © 2026 <strong>FIONAMIAO CONSULTING</strong><br />
+        email: contact@fionamiao.com
+      </footer>
+    </>
   );
 }
