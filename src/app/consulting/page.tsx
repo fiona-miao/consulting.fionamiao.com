@@ -206,7 +206,7 @@ export default function ConsultingPage() {
             className={`delay-2 ${isVisible('inquiry-form') ? 'animate-fade-right' : ''}`}
           ></textarea>
           <button type="submit" disabled={inquiryStatus === 'sending'} className={`delay-3 ${isVisible('inquiry-form') ? 'animate-fade-right' : ''}`}>
-            {inquiryStatus === 'sending' ? 'Sending...' : inquiryStatus === 'success' ? '✓ Sent' : 'Submit'}
+            {inquiryStatus === 'sending' ? '发送中...' : inquiryStatus === 'success' ? '✓ 已发送' : '提交'}
           </button>
         </form>
       </section>
@@ -248,7 +248,7 @@ export default function ConsultingPage() {
               className={`delay-3 ${isVisible('join') ? 'animate-fade-up' : ''}`}
             />
             <button type="submit" disabled={joinStatus === 'sending'} className={`delay-4 ${isVisible('join') ? 'animate-fade-up' : ''}`}>
-              {joinStatus === 'sending' ? 'Creating...' : joinStatus === 'success' ? '✓ Created' : 'Create Account'}
+              {joinStatus === 'sending' ? '创建中...' : joinStatus === 'success' ? '✓ 已创建' : '创建账户'}
             </button>
           </form>
         </div>
