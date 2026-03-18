@@ -179,7 +179,7 @@ export default function ConsultingPage() {
         <div data-animate id="inquiry-left">
           <h2 className={`${isVisible('inquiry-left') ? 'animate-fade-left' : ''}`}>Submit an inquiry</h2>
           <p className={`delay-1 ${isVisible('inquiry-left') ? 'animate-fade-left' : ''}`}>We will get back to you within 24–48 hours.</p>
-          <p className={`delay-2 ${isVisible('inquiry-left') ? 'animate-fade-left' : ''}`}>email: <strong>contact@fionamiao.com</strong></p>
+          <p className={`delay-2 ${isVisible('inquiry-left') ? 'animate-fade-left' : ''}`}>Email: <strong>contact@fionamiao.com</strong></p>
         </div>
         <form onSubmit={handleInquirySubmit} data-animate id="inquiry-form">
           <input
@@ -192,7 +192,7 @@ export default function ConsultingPage() {
           />
           <input
             type="email"
-            placeholder="Your email"
+            placeholder="Your Email"
             value={inquiryForm.email}
             onChange={(e) => setInquiryForm({...inquiryForm, email: e.target.value})}
             required
@@ -256,7 +256,7 @@ export default function ConsultingPage() {
 
       <footer>
         © 2026 <strong>FIONAMIAO CONSULTING</strong><br/>
-        email: contact@fionamiao.com
+        Email: contact@fionamiao.com
       </footer>
     </>
   );
