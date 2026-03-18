@@ -35,9 +35,5 @@
       "description": "NextAuth secret (optional)",
       "value": "@nextauth_secret"
     }
-  ],
-  "domains": [
-    "www.advisory.fionaconsult.de",
-    "advisory.fionaconsult.de"
   ]
 }
